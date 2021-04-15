@@ -12,4 +12,8 @@ middleware:
 
 ```java
  @DoWhiteList(key = "userId", returnJson = "{\"code\":\"999\",\"info\":\"非白名单可访问用户拦截！\"}")
+@GetMapping(path = "/queryUserInfo")
+public UserInfo queryUserInfo(@RequestParam String userId){
+        // ...
+        }
 ```
